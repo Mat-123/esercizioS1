@@ -6,8 +6,11 @@
     <title>Task 1</title>
 </head>
 <body>
-    <h1><?php
-        echo 5+2
-    ?></h1>
+    <h1>Data di oggi:</h1>
+    <p><?php
+    setlocale(LC_ALL, 'it_IT');
+    date_default_timezone_set("Italy/Rome");
+    echo "La data di oggi e': " . date("l, d/m/Y")?>
+     </p>
 </body>
 </html>
